@@ -27,9 +27,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body
-        className={cn(`relative dark ${geistSans.variable} ${geistMono.variable} overscroll-none antialiased`, cnBgGradient)}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <header className="sticky max-w-7xl top-4 mx-auto z-10 p-4 rounded-xl backdrop-blur-md w-full bg-zinc-950/45 text-primary">
           <div className="flex items-center justify-between mx-4 font-[family-name:var(--font-geist-mono)]">
             <p>Mukhammad Fadhila Ikhsani</p>
