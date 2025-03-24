@@ -18,7 +18,7 @@ export function Project() {
 	];
   
   return (
-    <Section className="mt-24">
+    <Section id="projects" className="mt-24">
 			<h1 className="text-7xl font-bold">Projects</h1>
       <div className="relative grid grid-cols-2 w-full gap-4">
         {datas.map((data, index) => (

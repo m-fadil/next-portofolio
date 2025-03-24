@@ -1,5 +1,5 @@
 import { About } from "@/components/sections/about";
-import { Project } from "@/components/sections/project";
+import { Project } from "@/components/sections/projects";
 import { Welcome } from "@/components/sections/welcome"
 
 export default function Home() {
