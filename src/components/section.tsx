@@ -1,11 +1,14 @@
 import { cn } from "@/lib/utils";
+import React from "react";
 
-export function Section({
-  className,
-  children
-}: Readonly<{
-  className?: string;
-  children: React.ReactNode;
-}>) {
-  return <section className={cn("flex flex-col max-w-4xl gap-4", className)}>{children}</section>
-}
+const Section = React.forwardRef<
+  HTMLDivElement,
+  React.ComponentPropsWithRef<"section">
+>(({ children, className, ...props }) => (
+  <section className={cn("flex flex-col max-w-4xl gap-4", className)} {...props}>
+    {children}
+  </section>
+))
+Section.displayName = "Section";
+
+export { Section };
