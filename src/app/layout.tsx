@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import { Navbar } from "@/components/navbar";
 import { Background } from "@/components/background";
+import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "My Portfolio",
@@ -30,8 +31,8 @@ export default function RootLayout({
 			<body className={cn("relative text-primary-foreground", geistSans.variable, geistMono.variable)}>
         <Background />
 				<Navbar />
-				<main className="min-h-screen max-w-4xl w-full mx-auto">{children}</main>
-				<footer></footer>
+				<main>{children}</main>
+				<Footer />
 			</body>
 		</html>
 	);
