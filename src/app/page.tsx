@@ -1,11 +1,13 @@
-import { About } from "@/components/about";
-import { Welcome } from "@/components/welcome"
+import { About } from "@/components/sections/about";
+import { Project } from "@/components/sections/project";
+import { Welcome } from "@/components/sections/welcome"
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 gap-y-24">
       <Welcome />
       <About />
+      <Project />
     </div>
   );
 }
